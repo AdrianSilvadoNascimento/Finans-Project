@@ -1,16 +1,71 @@
+#home, #saiba{
+    color: white;
+}
+/*  Pagina Login */
+#entrar, #username, #password{ 
+    width: 350px;
+}
+#username, #password{
+    height: 40px;
+}
+#username{
+    padding-left: 35px;
+    border: none;
+    border-bottom: 1px solid #536878; 
+    background: url("img/user.svg") no-repeat center left;
+    background-size: 20px;
+    background-position-x: 5px;
+}
+#password{
+    padding-left: 35px;
+    border:none;
+    border-bottom: 1px solid #536878;
+    background: url("img/password.svg") no-repeat center left;
+    background-size: 20px;
+    background-position-x: 5px;
+}
+/* Fim Pagina Login */
+
+/* Remover outline dos Formulários */
+
+input:focus{
+    outline: none;
+}
+
+.surgir-right{
+    animation: aparecer-right 2s;
+}
+.surgir-left{
+    animation: aparecer-left 2s;
+}
+.caixa{
+    padding: 60px 0;
+    border-bottom: solid #e5e5e5;
+}
 .sombra{
     filter: drop-shadow(3px 3px 5px #0275d8 );
 }
-
-
+.sombra-conteudo{
+    filter: drop-shadow(3px 3px 5px #536878);
+}
 .aparecer {
     animation: aparecer 2s;
 }
-
 .capa-mulher{
     animation: mulher 2s;
 }
+#rodape a{
+    font-size: 13px;
+    text-decoration: none;
+}
+footer>.container{
+    position: absolute;
+}
 
+footer>.container #rodape{
+    top: 0;
+    left: -80px;
+}
 @keyframes aparecer{
     from{
         padding-left: 150px;
@@ -24,6 +79,27 @@
 @keyframes mulher{
     from{
         opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes aparecer-right{
+    from{
+        padding-right: 200px;
+        opacity: 0;
+        filter: blur(3px);
+    }
+    to{
+        opacity: 1;
+    }
+
+}
+@keyframes aparecer-left{
+    from{
+        padding-left: 200px;
+        opacity: 0;
+        filter: blur(3px);
     }
     to{
         opacity: 1;
