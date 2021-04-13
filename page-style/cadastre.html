@@ -6,6 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
+    <!-- Icone -->
+    <link rel="icon" href="img/icone.png">
+
     <!-- Estilo Css -->
     <link rel="stylesheet" href="estilo.css">
 
@@ -17,71 +20,71 @@
   </head>
   <body>
     <header class="sticky-top mb-5"> <!-- Cabecalho -->
-      <nav class="navbar navbar-expand-md bg-info">
-         <div class="container">
-              <a href="#" class="navbar-brand m-sm-auto">
-                  <img src="img/logo.png" width="142px;" alt="Logo Finans">
-              </a>
-              
-              <button class="navbar-toggler"data-toggle="collapse" data-target="#nav-navegacao">
-                  <span class="fas fa-bars"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="nav-navegacao">
-                  <ul class="navbar-nav ml-auto">
-                      <li class="nav-item">
-                          <a href="index.html" class="nav-link text-dark active text-center">Home</a>
-                      </li>
-                      <li class="nav-item">
-                          <a href="" class="nav-link text-dark text-center">Recursos</a>
-                      </li>
-                      <li class="nav-item">
-                          <a href="" class="nav-link text-dark text-center">Benefícios</a>
-                      </li>
-                      <li class="nav-item">
-                          <a href="" class="nav-link text-dark mr-4 text-center">Preços</a>
-                      </li>
-                      <li>
-                          <a href="entrar.html" class="btn btn-outline-light ml-4 m-auto btn-block">Entrar</a>
-                      </li>
-                      <li>
-                          <a href="cadastre.html" class="btn text-warning text-md-center">Cadastre-se</a>
-                      </li>
-                  </ul>
-              </div>
-         </div>
-      </nav>
-  </header> <!-- Fim Cabecalho -->
+        <nav class="navbar navbar-expand-md bg-info">
+            <div class="container">
+                <a href="#" class="navbar-brand m-sm-auto">
+                    <img src="img/logo.png" width="142px;" alt="Logo Finans">
+                </a>
+                    
+                <button class="navbar-toggler"data-toggle="collapse" data-target="#nav-navegacao">
+                    <span class="fas fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="nav-navegacao">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link text-dark active text-center">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-dark text-center">Recursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-dark text-center">Benefícios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-dark mr-4 text-center">Preços</a>
+                        </li>
+                        <li>
+                            <a href="entrar.html" class="btn btn-outline-light ml-4 m-auto btn-block">Entrar</a>
+                        </li>
+                        <li>
+                            <a href="cadastre.html" class="btn text-warning text-md-center">Cadastre-se</a>
+                        </li>
+                    </ul>
+                </div>
+             </div>
+        </nav>
+    </header> <!-- Fim Cabecalho -->
 
     <section class="mt-5 mb-5">
-          <div class="container">
+        <div class="container">
             <div class="row">
-              <div class="col-md-6 d-flex flex-wrap border-right">
-                  <h3 class="text-center p-3 mt-3 mb-5">Para você ter acesso, por favor se cadastre</h3>
-                  <form class="form-group m-auto">
-                      <p class="alert alert-success text-center" id="sucesso">Você se registou com sucesso!</p>
-                      <input class="d-block mb-5 surgir-right" type="text" name="username" id="username" placeholder="Digite seu login..." required>
-                      <input class="d-block mb-4 surgir-right" type="password" name="password" id="password" placeholder="Digite sua senha..." required>
-                      <input type="submit" value="Cadastrar" id="entrar" onClick = "adicionarNaLista()" class="btn btn-info btn-block mb-4 surgir-right">
-                  </form>
-              </div>
-              <div class="col-md-6 d-none d-md-block">
-                <div id="carrossel" class="carousel slide" data-ride="carousel">
-                  <ol class="carousel-indicators">
-                      <li class="active" data-target="#carrossel" data-slide-to="0"></li>
-                      <li data-target="#carrossel" data-slide-to="1"></li>
-                      <li data-target="#carrossel" data-slide-to="2"></li>
-                  </ol>
-                  <div class="carousel-inner"> <!--inner-->
-                      <div class="carousel-item active">
-                          <img src="img/saiba.png" class="img-fluid sombra-conteudo" alt="">
-                      </div>
-                      <div class="carousel-item">
-                          <img src="img/facil.png" class="img-fluid sombra-conteudo" alt="">
-                      </div>
-                      <div class="carousel-item">
-                          <img src="img/economize.png" class="img-fluid sombra-conteudo" alt="">
-                      </div>
-                  </div> <!--inner-->
+                <div class="col-md-6 d-flex flex-wrap border-right">
+                    <h3 class="text-center p-3 mt-3 mb-5">Para você ter acesso, por favor se cadastre</h3>
+                    <form class="form-group m-auto">                        
+                        <p class="alert alert-success text-center" id="sucesso">Você se registou com sucesso!</p>
+                        <input class="d-block mb-5 surgir-right" type="text" name="username" id="username" placeholder="Digite seu login..." required>
+                        <input class="d-block mb-4 surgir-right" type="password" name="password" id="password" placeholder="Digite sua senha..." required>
+                        <input type="submit" value="Cadastrar" id="entrar" onClick = "adicionarNaLista()" class="btn btn-info btn-block mb-4 surgir-right">                        
+                    </form>
+                </div>
+                <div class="col-md-6 d-none d-md-block"> 
+                    <div id="carrossel" class="carousel slide" data-ride="carousel"> <!-- Carrossel -->
+                        <ol class="carousel-indicators">
+                            <li class="active" data-target="#carrossel" data-slide-to="0"></li>
+                            <li data-target="#carrossel" data-slide-to="1"></li>
+                            <li data-target="#carrossel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner"> <!--inner-->
+                            <div class="carousel-item active">
+                                <img src="img/saiba.png" class="img-fluid sombra-conteudo" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/facil.png" class="img-fluid sombra-conteudo" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/economize.png" class="img-fluid sombra-conteudo" alt="">
+                            </div>
+                        </div> <!--inner-->
                   <!--controles
                   <a href="#carrossel" class="text-dark carousel-control-prev" data-slide="prev">
                       <span class="fas fa-chevron-left fa-3x"></span>
@@ -89,52 +92,52 @@
                   <a href="#carrossel" class="text-dark carousel-control-next" data-slide="next">
                       <span class="fas fa-chevron-right fa-3x"></span>
                   </a>-->
-              </div> <!--carousel-->
+                    </div> <!-- Fim Carrossel -->
+                </div> 
             </div>
-          </div>
-       </div>
+        </div>
     </section>
 
     <br><br>
 
     <footer class="mt-5"> <!-- Inicio Rodape -->
-      <div class="container">
-          <div class="row">
-              <div class="col-md-8 d-flex align-self-center">
-                  <p>
-                      <div id="rodape" class="m-sm-auto">
-                          <a href="">
-                              <span class="pl-1 pr-1">Home</span> |
-                          </a>
-                          <a href="">
-                              <span class="pl-1 pr-1">Recursos</span> |
-                          </a>
-                          <a href="">
-                              <span class="pl-1 pr-1">Benefícios</span> |
-                          </a>
-                          <a href="">
-                              <span class="pl-1 pr-1">Preços</span>
-                          </a>
-                      </div>
-                  </p>
-                  <br><br><br><br><br>
-              </div>
-              <div class="col-md-4 d-flex align-self-center mb-4">
-                  <p class="m-sm-auto">
-                      <a href="" class="btn btn-outline-info">
-                          <i class="fab fa-facebook-square"></i>
-                      </a>
-                      <a href="" class="btn btn-outline-info ml-2">
-                          <i class="fab fa-youtube"></i>
-                      </a>
-                      <a href="" class="btn btn-outline-info ml-2">
-                          <i class="fab fa-instagram"></i>
-                      </a>
-                  </p>
-              </div>
-          </div>
-      </div>
-  </footer> <!-- Fim Rodape -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 d-flex align-self-center">
+                    <p>
+                        <div id="rodape" class="m-sm-auto">
+                            <a href="">
+                                <span class="pl-1 pr-1">Home</span> |
+                            </a>
+                            <a href="">
+                                <span class="pl-1 pr-1">Recursos</span> |
+                            </a> 
+                            <a href="">
+                                <span class="pl-1 pr-1">Benefícios</span> |
+                            </a>
+                            <a href="">
+                                <span class="pl-1 pr-1">Preços</span>
+                            </a>
+                        </div>
+                    </p>
+                    <br><br><br><br><br>
+                </div>
+                <div class="col-md-4 d-flex align-self-center mb-4">
+                    <p class="m-sm-auto">
+                        <a href="" class="btn btn-outline-info">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="" class="btn btn-outline-info ml-2">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="" class="btn btn-outline-info ml-2">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Fim Rodape -->
 
     <!-- Pagina de Cadastro -->
     <script src="login.js"></script>

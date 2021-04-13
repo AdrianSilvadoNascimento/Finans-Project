@@ -8,21 +8,30 @@ var cadastrado = false;
 
 cadastrou.style = "display:none";
 
+function fazerLogin(){
+    var user = usuario.value;
+    var pass = senha.valuer;
+    if(user == listaContas[0] && pass == listaContas[1]){
+        window.location.assing("index.html");
+    }
+
+}
+
 function adicionarNaLista(){
-    var name = usuario.value;
-    var password = senha.value;
-    if(name == listaContas[0] && password == listaContas[1]){
-        console.log(name + " Você já está cadastrado!");
+    var nameCadastro = usuario.value;
+    var passwordCadastro = senha.value;
+    if(nameCadastro == listaContas[0] && passwordCadastro == listaContas[1]){
+        console.log(nameCadastro + " Você já está cadastrado!");
         cadastrado = true;
         usuario.value = "";
     }
     
     if(cadastrado == true){
-        alert(name + " Você já está cadastrado!")
+        alert(nameCadastro + " Você já está cadastrado!")
         usuario.value = "";
         cadastrado = false;
-    }else if (name != listaContas[0] && password != listaContas[1] && cadastrado == false){
-        listaContas.push(name, password);
+    }else if (nameCadastro != listaContas[0] && passwordCadastro != listaContas[1] && cadastrado == false){
+        listaContas.push(nameCadastro, passwordCadastro);
         cadastrou.style = "display:block";
         console.log(listaContas);
     }
