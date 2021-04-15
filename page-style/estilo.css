@@ -28,8 +28,20 @@
 
 /* Remover outline dos Formulários */
 
+#saiba .box{
+    padding: 10px;
+    border: 1px solid #153e5e;
+    border-radius: 20px;
+    background: #153e5e;
+    filter: blur(0.3px);
+}
+
 input:focus{
     outline: none;
+}
+
+.cards{
+    opacity: 0;
 }
 
 .surgir-right{
@@ -48,9 +60,9 @@ input:focus{
 .sombra-conteudo{
     filter: drop-shadow(3px 3px 5px #536878);
 }
-.aparecer {
-    animation: aparecer 2s;
-}
+/*.aparecer {
+
+}*/ 
 .capa-mulher{
     animation: mulher 2s;
 }
@@ -68,10 +80,11 @@ footer>.container #rodape{
 }
 @keyframes aparecer{
     from{
-        padding-left: 150px;
+        transform: translateX(-150px);
         opacity: 0;
     }
     to{
+        transform: translateX(0);
         opacity: 1;
     }
 }
